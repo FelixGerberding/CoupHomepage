@@ -13,7 +13,7 @@ var gulp          = require('gulp'),
     sourcemaps    = require('gulp-sourcemaps'),
     htmlmin       = require('gulp-html-minifier'),
     browserSync   = require('browser-sync');
-
+ 
 var src           = "./src/",
     dist          = "./dist/";
 
@@ -38,7 +38,7 @@ gulp.task('fonts',function(){
 });
 
 gulp.task('images',function(){
-    gulp.src(src + 'assets/images/*.*')
+    gulp.src(src + 'assets/images/*/*')
         .pipe(gulp.dest(dist + '/images/'))
 });
 
@@ -58,13 +58,17 @@ gulp.task('sass',function(){
 
 gulp.task('js',function(){
     gulp.src(src + 'assets/js/*.js')
-        .pipe(plumber())
-        .pipe(babel({
-            presets: ['es2015']}))
-        .pipe(browserify({
-            insertGlobals: true,
-            debug: !gulp.env.production }))
-        .pipe(uglify())
+        .pipe(sourcemaps.init())
+            .pipe(plumber())
+            .pipe(concat('global.js'))
+            .pipe(babel({
+                presets: ['es2015']}))
+            .pipe(browserify({
+                insertGlobals: true,
+                debug: !gulp.env.production }))
+            .pipe(uglify())
+            .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(dist + '/assets/js/'))
         .pipe(browserSync.stream());
 });
