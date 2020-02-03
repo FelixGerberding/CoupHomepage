@@ -83,3 +83,5 @@ gulp.task('default',function(){
     gulp.watch([src + 'assets/css/*.css'],['css']);
     gulp.watch([src + 'assets/js/*.js'],['js']);
 });
+
+gulp.task('build', ["html", "sass", "css", "js", "images", "fonts"]);
