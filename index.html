@@ -16,24 +16,30 @@
 
     <style>
       .shadow.is-danger {
-        -webkit-box-shadow: inset 0 -6px 0 rgba(255, 74, 110, 0.2);
-        box-shadow: inset 0 -6px 0 rgba(255, 74, 110, 0.2);
+        -webkit-box-shadow: inset 0 -6px 0 rgba(255, 74, 110, 1);
+        box-shadow: inset 0 -6px 0 rgba(255, 74, 110, 1);
       }
       .shadow.is-purple {
         -webkit-box-shadow: inset 0 -6px 0 rgba(184, 107, 255, 0.2);
         box-shadow: inset 0 -6px 0 rgba(184, 107, 255, 0.2);
       }
       .shadow.is-success {
-        -webkit-box-shadow: inset 0 -6px 0 rgba(56, 224, 239, 0.2);
-        box-shadow: inset 0 -6px 0 rgba(56, 224, 239, 0.2);
+        -webkit-box-shadow: inset 0 -6px 0 rgba(56, 224, 239, 1);
+        box-shadow: inset 0 -6px 0 rgba(56, 224, 239, 1);
+      }
+      .button {
+        border-width: 0;
       }
     </style>
   </head>
   <body>
     <!-- Header -->
-    <section class="section is-header" style="height: 50px; margin-top: -40px;">
+    <section
+      class="section is-header"
+      style="height: 50px; margin-top: -40px; background-color: #102E4A"
+    >
       <div class="container">
-        <nav class="navbar">
+        <nav class="navbar" style="background-color: #102E4A">
           <!-- Logo -->
           <div
             class="navbar-brand"
@@ -41,7 +47,7 @@
           >
             <a
               href="https://get.coup.today"
-              style="font-family: 'Comfortaa', cursive; color:#000"
+              style="font-family: 'Comfortaa', cursive; color:white;"
             >
               COUP
             </a>
@@ -71,13 +77,13 @@
     </section>
 
     <!-- Hero -->
-    <section class="hero is-medium" style="border-bottom: 1px solid lightgrey;">
+    <section class="hero is-medium" style="background-color: #102E4A">
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column is-half">
               <div class="content hello">
-                <p style="color: black; font-size: 32px;">
+                <p style="color: white; font-size: 32px;">
                   <span class="shadow is-success">Coup</span> lets you save<br />
                   money without
                   <span class="shadow is-danger">headache.</span><br />
@@ -98,7 +104,7 @@
                   </a>
 
                   <p
-                    style="text-align: left; font-size: 14px; margin-top: 5px; margin-left: 10px;"
+                    style="text-align: left; font-size: 14px; margin-top: 5px; margin-left: 10px;color:#99AAB5"
                   >
                     Cancel at any time
                   </p>
@@ -112,14 +118,42 @@
       </div>
     </section>
 
+    <svg
+      style="background:#102E4A"
+      class="white_shape"
+      id="white_shape"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 1200 59.3"
+      xml:space="preserve"
+    >
+      <path
+        fill="#565264"
+        id="white_shape_path1"
+        d="M0,41.7c0,0,137-71.3,466-27.3C801,59.1,998,69.7,1200,29v1071.3H0V41.7z"
+        data-original="M1200,0 v100 h-1200 v-100 h1200z"
+      ></path>
+      <path
+        opacity="0"
+        id="white_shape_path2"
+        d="M0,41.7c0,0,137-71.3,466-27.3C801,59.1,998,69.7,1200,29v1071.3H0V41.7z"
+        data-svg-origin="0 0"
+        transform="matrix(1,0,0,0,0,0)"
+        style=""
+      ></path>
+    </svg>
+
     <!-- Features -->
     <div
       class="section"
-      style="color: black; margin-top: 20px; border-bottom: 1px solid lightgrey;"
+      style="padding-top: 0; color: white; border-bottom: 1px solid #102E4A; background-color: #565264"
     >
       <div class="container">
         <div class="item columns">
-          <div class="column is-3" style="border: 0px solid red;">
+          <div class="column is-3">
             <p style="text-align: center; font-size: 35px;">
               <span class="fe fe-zap"></span>
             </p>
@@ -143,7 +177,7 @@
             </p>
 
             <p style="text-align: center; margin-top: 10px;">
-              Save on the things you actually need
+              Save on the things you actually need.
             </p>
           </div>
 
@@ -179,26 +213,28 @@
     </div>
 
     <!-- Footer -->
-    <div class="section" style="color: black;">
+    <div class="section" style="color: white;background-color: #565264;">
       <div class="container">
         <div class="item columns" style="">
           <div class="column is-2"></div>
 
           <div class="column is-8">
             <nav class="level" style="">
-              <div class="level-item" style="color: #0a0a0a;">
+              <div class="level-item" style="color: white;">
                 Email us at hey@coup.today
               </div>
             </nav>
 
-            <nav class="level" style="margin-top: 20px;">
-              <div class="level-item" style="color: grey; font-size: 14px;">
-                <a href="terms.html" style="text-decoration: none; color: grey;"
+            <nav class="level" style="margin-top: 20px; color:#99AAB5">
+              <div class="level-item" style="font-size: 14px;">
+                <a
+                  href="terms.html"
+                  style="text-decoration: none; color: #99AAB5;"
                   >Terms</a
                 >
                 &nbsp;&nbsp;/&nbsp;&nbsp;<a
                   href="privacy.html"
-                  style="text-decoration: none; color: grey;"
+                  style="text-decoration: none; color: #99AAB5;"
                   >Privacy</a
                 >&nbsp;&nbsp;/&nbsp;&nbsp; &copy; 2020 Cookie Abusers
               </div>
