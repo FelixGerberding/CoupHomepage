@@ -1,0 +1,695 @@
+
+$colorLightBlue: #38E0EF;
+$colorDarkBlue: #152882;
+
+body
+  font-family: 'Nunito Sans', sans-serif
+
+p
+  font-size: 15px
+  line-height: 1.8
+
+a
+  text-decoration: none !important
+  outline: none
+
+/***** 1. Basic Shit *****
+
+.section
+  padding-bottom: 80px
+  padding-top: 80px
+  position: relative
+
+.vertical-content
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+  align-items: center
+  -webkit-align-items: center
+  justify-content: center
+  -webkit-justify-content: center
+  flex-direction: row
+  -webkit-flex-direction: row
+
+.home-center
+  display: table
+  width: 100%
+  height: 100%
+
+.home-desc-center
+  display: table-cell
+  vertical-align: middle
+
+.bg-overlay
+  background-color: #000
+  opacity: 0.7
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+
+.bg-overlay-gredient
+  position: absolute
+  background: #FC466B
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B)
+  background: linear-gradient(to right, #3F5EFB, #FC466B)
+  top: 0
+  left: 0
+  opacity: 0.8
+  height: 100%
+  width: 100%
+
+.btn-outline-white
+  color: #fff
+  border: 2px solid #fff
+  background-color: transparent
+  font-size: 15px
+  transition: all 0.5s
+  border-radius: 3px
+  letter-spacing: 1px
+
+  &:hover, &:focus, &:active, &.active, &.focus, &:active, &:focus, &:hover
+    outline: none
+    border: 2px solid #fff
+    text-decoration: none
+    background-color: #fff
+    color: $colorLightBlue
+
+.open > .dropdown-toggle .btn-outline-white
+  outline: none
+  border: 2px solid #fff
+  text-decoration: none
+  background-color: #fff
+  color: $colorLightBlue
+
+.btn-outline
+  color: $colorLightBlue
+  border: 2px solid $colorLightBlue
+  font-size: 15px
+  transition: all 0.5s
+  border-radius: 3px
+  letter-spacing: 1px
+
+  &:hover, &:focus, &:active, &.active, &.focus, &:active, &:focus, &:hover
+    outline: none
+    border: 2px solid $colorLightBlue
+    color: #fff
+    text-decoration: none
+    background-color: $colorLightBlue
+
+.open > .dropdown-toggle .btn-outline
+  outline: none
+  border: 2px solid $colorLightBlue
+  color: #fff
+  text-decoration: none
+  background-color: $colorLightBlue
+
+.btn-custom
+  color: #fffcff
+  border: 2px solid $colorLightBlue
+  font-size: 15px
+  transition: all 0.5s
+  border-radius: 3px
+  background-color: $colorLightBlue
+  letter-spacing: 1px
+
+  &:hover, &:focus, &:active, &.active, &.focus, &:active, &:focus, &:hover
+    color: $colorLightBlue
+    outline: none
+    background-color: transparent
+    text-decoration: none
+    box-shadow: none
+
+.open > .dropdown-toggle .btn-custom
+  color: $colorLightBlue
+  outline: none
+  background-color: transparent
+  text-decoration: none
+  box-shadow: none
+
+.btn
+  padding: 14px 45px
+
+.btn-sm
+  padding: 10px 34px
+
+.text-custom
+  color: $colorDarkBlue
+
+.bg-custom
+  background-color: $colorLightBlue
+
+.f-12
+  font-size: 12px
+
+.f-13
+  font-size: 13px
+
+.f-14
+  font-size: 14px
+
+.f-15
+  font-size: 15px
+
+.f-16
+  font-size: 16px
+
+.f-17
+  font-size: 17px
+
+.f-18
+  font-size: 18px
+
+.f-19
+  font-size: 19px
+
+.f-20
+  font-size: 20px
+
+.line-height_1_4
+  line-height: 1.4
+
+.line-height_1_6
+  line-height: 1.6
+
+.line-height_1_8
+  line-height: 1.8
+
+.btn-read-more
+  color: #333
+  display: inline-block
+  text-decoration: underline !important
+
+  &:hover
+    color: $colorLightBlue !important
+
+/***** 2. Title *****
+
+.title-heading
+  font-size: 26px
+
+.title-desc
+  max-width: 600px
+  margin: 0 auto
+
+.title-icon
+  position: relative
+
+  &:before
+    content: ""
+    position: absolute
+    top: 1px
+    left: 40px
+    width: 40px
+    height: 2px
+    background: #dadada
+
+  &:after
+    content: ""
+    position: absolute
+    top: 1px
+    right: 40px
+    width: 40px
+    height: 2px
+    background: #dadada
+
+  i
+    font-size: 40px
+    color: $colorDarkBlue
+    line-height: 0.5
+
+/***** 3. Home *****
+
+.bg-home
+  background-size: cover
+  padding-top: 100px
+  position: relative
+  background-position: center center
+  background: linear-gradient(to bottom, #3F51B5, #4DB6AC)
+
+.home-bg-overlay
+  background: url("../images/bg-home.png")
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+
+.home-heading
+  font-size: 40px
+  color: #fff
+
+.home-subtitle
+  color: #f9f9f9
+
+.home-button span
+  position: relative
+  top: 8px
+
+.home-img
+  position: relative
+  top: 100px
+  z-index: 1
+
+/***** 4. Client *****
+
+.client-images
+  display: inline-block
+  margin-left: 45px
+
+  &:first-child
+    margin-left: 0
+    margin-left: 0
+
+  img:hover
+    opacity: 0.8
+    transition: 0.5s
+
+/***** 5. About *****
+
+.about-icon i
+  background-color: $colorLightBlue
+  display: inline-block
+  font-size: 45px
+  width: 90px
+  line-height: 90px
+  border-radius: 50%
+
+.about-line:before
+  content: ""
+  border: 1px dashed #e0e0e0
+  position: absolute
+  width: 46%
+  left: 78%
+  top: 85px
+
+.about-left-icon-1 i
+  left: 65%
+
+.about-left-icon-2 i
+  left: 32%
+
+.about-left-icon-1 i, .about-left-icon-2 i
+  font-size: 24px
+  border-radius: 50%
+  position: absolute
+  top: 122px
+  color: $colorDarkBlue
+  z-index: 9
+  background-color: #e3f7f3
+  width: 26px
+  height: 26px
+  line-height: 26px
+
+.about-count p
+  position: relative
+  top: -90px
+  background: $colorDarkBlue
+  color: $colorLightBlue
+  width: 40px
+  height: 40px
+  display: inline-block
+  border-radius: 50%
+  line-height: 40px
+  left: 45px
+
+/***** 6. Features *****
+
+.feature-img img
+  box-shadow: 50px 50px 0px 10px $colorDarkBlue
+
+.feature-title
+  max-width: 450px
+
+.feature-border
+  width: 60px
+  height: 2px
+
+.feature-icon i
+  height: 25px
+  width: 25px
+  display: inline-block
+  text-align: center
+  line-height: 25px
+  font-size: 14px
+  border-radius: 3px
+  background-color: $colorLightBlue
+
+.play
+  position: absolute
+  top: 45%
+  left: 0px
+  right: 0px
+  transform: translateY(-50%)
+
+.play-icon-circle
+  height: 70px
+  width: 70px
+  line-height: 70px
+  text-align: center
+  border-radius: 50%
+  color: #fff
+  font-size: 30px
+  background-color: $colorDarkBlue
+  display: inline-block
+
+/***** 7. Services *****
+
+.services-icon
+  i
+    position: relative
+    font-size: 44px
+    bottom: 16px
+    left: 16px
+
+  &:after
+    content: ""
+    position: absolute
+    left: 0px
+    right: 0px
+    width: 42px
+    height: 42px
+    margin: 0px auto
+    background: rgba(27, 188, 155, 0.12)
+    border-radius: 3px
+
+.swiper-slide
+  &.swiper-slide-active img
+    border: 10px solid #eeeeee
+
+  img
+    box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1)
+
+/***** 8. Screenshot *****
+
+.swiper-button-next, .swiper-button-prev
+  background-image: none
+
+.swiper-button-next, .swiper-button-prev
+  width: 40px
+  height: 40px
+  margin-top: -22px
+  line-height: 40px
+  background-color: $colorLightBlue
+  text-align: center
+  font-size: 30px
+  color: #fff
+  border-radius: 3px
+
+/***** 8. Testimonials *****
+
+.carousel-indicators
+  align-items: center
+
+  li
+    width: 64px
+    height: 64px
+    margin-right: 5px
+    margin-left: 5px
+    opacity: 0.4
+    border-radius: 3px
+    border: 3px solid #fff
+    box-shadow: 1px 4px 20px rgba(27, 188, 155, 0.12)
+    cursor: pointer
+    overflow: hidden
+    transition: all 0.5s
+
+  .active
+    opacity: 1
+
+.carousel-inner
+  min-height: 320px
+
+.testi-desc
+  max-width: 700px
+  margin: 0 auto
+
+.carousel-icon
+  color: $colorLightBlue
+  font-size: 40px
+
+.carousel-control-next-icon, .carousel-control-prev-icon
+  display: inline-block
+  width: 30px
+  height: 30px
+  background-color: $colorLightBlue
+  background-size: 100% 60%
+  border-radius: 3px
+
+/***** 10. Pricing *****
+
+.pricing-icon i
+  height: 20px
+  width: 20px
+  display: inline-block
+  text-align: center
+  line-height: 20px
+  font-size: 14px
+  border-radius: 50%
+  color: #fff
+  background-color: #ababab
+
+.pricing-icon-active i
+  height: 20px
+  width: 20px
+  display: inline-block
+  text-align: center
+  line-height: 20px
+  font-size: 14px
+  border-radius: 50%
+  color: #fff
+  background-color: $colorLightBlue
+
+.pricing-box
+  border: 2px solid #f1f1f1
+  border-radius: 3px
+
+.pricing-box-active
+  border: 2px solid $colorLightBlue
+  border-radius: 3px
+
+/***** 11. FAQ *****
+
+.faq-icon i
+  line-height: 0.9
+
+.faq-answer
+  max-width: 450px
+
+/***** 12. Super Duper Team *****
+
+.team-img img
+  border-radius: 3px
+
+/***** 13. Newsletter *****
+
+.subcribe-form
+  input
+    padding: 15px 20px
+    width: 100%
+    font-size: 17px
+    border: 2px solid #4c5667
+    border-radius: 3px
+    outline: none
+
+  button
+    position: absolute
+    top: 5px
+    right: 5px
+    outline: none !important
+    border-radius: 3px
+    font-size: 14px
+    padding: 12px 45px
+
+  form
+    position: relative
+    max-width: 600px
+    margin: 0px auto
+
+/***** 14. Footer *****
+
+.bg-footer
+  background-color: #33383c
+
+.footer-heading
+  letter-spacing: 2px
+
+.footer-link a
+  color: #acacac
+  line-height: 40px
+  font-size: 14px
+  transition: all 0.5s
+
+  &:hover
+    color: $colorLightBlue
+
+.contact-info
+  color: #acacac
+  font-size: 14px
+
+.footer-social-icon
+  font-size: 15px
+  height: 34px
+  width: 34px
+  line-height: 34px
+  border-radius: 3px
+  text-align: center
+  display: inline-block
+
+.facebook
+  background-color: #4e71a8
+  color: #ffffff
+
+.twitter
+  background-color: #55acee
+  color: #ffffff
+
+.google
+  background-color: #d6492f
+  color: #ffffff
+
+.apple
+  background-color: #424041
+  color: #ffffff
+
+.footer-alt
+  color: #acacac
+
+.footer-heading
+  position: relative
+  padding-bottom: 12px
+
+  &:after
+    content: ''
+    width: 25px
+    border-bottom: 1px solid #FFF
+    position: absolute
+    left: 0
+    bottom: 0
+    display: block
+    border-bottom: 1px solid $colorLightBlue
+
+/***** 15. About us stuff *****
+
+.bg-pages-title
+  padding: 200px 0px 140px 0px
+  background-size: cover
+  position: relative
+  background-position: center center
+  background: linear-gradient(to bottom, #3F51B5, #4DB6AC)
+
+/***** 16. Icons *****
+
+.icon-list-demo
+  div
+    cursor: pointer
+    line-height: 45px
+    white-space: nowrap
+    text-overflow: ellipsis
+    display: block
+    font-size: 14px
+    overflow: hidden
+
+  i
+    text-align: center
+    vertical-align: middle
+    font-size: 24px
+    width: 50px
+    height: 50px
+    line-height: 50px
+    margin-right: 12px
+    color: rgba(49, 58, 70, 0.7)
+    border-radius: 3px
+    display: inline-block
+    transition: all 0.2s
+    font-weight: 600
+
+/***** 17. Contact *****
+
+
+.contact-icon
+  font-size: 60px
+
+.contact-details
+  position: relative
+  top: -50px
+  box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1)
+
+textarea.form-control
+  height: auto !important
+
+.error
+  margin: 8px 0px
+  display: none
+  color: red
+
+#ajaxsuccess
+  font-size: 16px
+  width: 100%
+  display: none
+  clear: both
+  margin: 8px 0px
+
+.error_message
+  padding: 10px
+  margin-bottom: 20px
+  text-align: center
+  color: #f01414
+  border: 2px solid #f01414
+
+.contact-loader
+  display: none
+
+#success_page
+  text-align: center
+  margin-bottom: 50px
+
+  h3
+    color: #0dba26
+    font-size: 22px
+
+.custom-form .form-control
+  &:focus
+    border-color: $colorLightBlue
+    outline: 0
+    box-shadow: none
+
+  height: 50px
+  z-index: 2
+  border-radius: 0
+  font-size: 14px
+  background-color: transparent
+  border: 1px solid #c1c1c1
+
+.contact-label
+  font-weight: 600
+
+.meadia-contact
+  border: 1px solid #bcc0d4
+
+@media (max-width: 425px)
+  .carousel-inner
+    min-height: 440px
+
+@media (max-width: 768px)
+  .about-line:before, .about-left-icon-1, .about-left-icon-2
+    display: none
+
+  .post-border-right
+    border-right: none
+    border-bottom: 1px solid #6c757d
+
+  .pagination > li >
+    a, span
+      height: 36px
+      width: 36px
+      line-height: 32px
+
+  .swiper-button-next, .swiper-button-prev
+    width: 30px
+    height: 30px
+    line-height: 30px
