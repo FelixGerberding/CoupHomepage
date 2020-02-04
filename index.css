@@ -1,0 +1,100 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa";
+}
+
+h1{
+    font-weight: 700;
+    color: #121717;
+    font-size: 28px;
+    margin-left: 8%;
+    margin-top: 5vh;
+}
+
+
+.device-height{
+    width: auto;
+    height: 100vh;
+}
+
+.top-section{
+    background-color: #060811;
+}
+
+.header{
+    padding: 30px 30px 10px 30px;
+    overflow: auto;
+}
+
+.main{
+    background-color: #FFFFFF;
+}
+
+.header .navigation{
+    float: right;
+    text-align: right;
+    font-size: 18px;
+    color: #FFFFFF41;
+    font-family: "Comfortaa";
+    font-weight: 300;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li{
+    margin: 10px 0;
+    
+}
+
+.navigation p{
+    text-decoration: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #FFFFFF41;
+}
+
+.navigation .selected p{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.top-section .content{
+    height: 60vh;
+}
+
+.catch-phrase{
+    color: #FFFFFF41;
+    text-align: right;
+    margin: 8vh 30px 0px 0px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.catch-phrase .highlight{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.button-wrapper{
+    text-align: center;
+}
+
+.outlined-button{
+    display: inline-block;
+    font-family: "Righteous";
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 3vh auto;
+    border-color: #FFFFFF;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.outlined-button p{
+    margin: 0;
+}
