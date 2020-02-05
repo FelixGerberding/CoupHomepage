@@ -131,6 +131,110 @@ h1{
     margin: 30px auto;
 }
 
+.selling-points-wrapper{
+    text-align: center;
+}
+
+
+.selling-points{
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.selling-points img{
+    width: 33px;
+}
+
+.selling-points p{
+    margin-left: 20px;
+}
+
+.selling-points div{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.place-holder-image{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 60px 0;
+}
+
+.place-holder-image img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.newsletter-cta{
+    background-color: #152882;
+    display: block;
+}
+
+.newsletter-cta .outlined-button{
+    border-color: #38E0EF;
+    color: #38E0EF;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.newsletter-cta .outlined-button p{
+    padding: 0;
+}
+
+.newsletter-cta p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    padding: 30px 40px 0 40px;
+}
+
+.newsletter-cta .call-to-action{
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 30px 40px 0 40px;
+}
+
+.coup-logo-as-text{
+    color: #38E0EF;
+    font-weight: 300;
+}
+
+.email-input{
+    font-family: "Comfortaa";
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 13px 20px;
+    margin: 90px auto 30px auto;
+    display: block;
+    border: none;
+}
+
+.email-input:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 700px) {
     body{
         font-size: 20px;
@@ -161,6 +265,28 @@ h1{
         padding: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 920px) {
     body{
@@ -202,6 +328,25 @@ h1{
         overflow: auto;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1440px) {
 
@@ -251,6 +396,24 @@ h1{
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 919px) {
     #spotlight-mockup{
