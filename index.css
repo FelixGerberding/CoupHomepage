@@ -186,6 +186,7 @@ h1{
 
 .newsletter-cta .outlined-button p{
     padding: 0;
+    color: #38E0EF;
 }
 
 .newsletter-cta p{
@@ -214,6 +215,7 @@ h1{
     margin: 90px auto 30px auto;
     display: block;
     border: none;
+    box-shadow: 0 4px 8px #00000041;
 }
 
 .email-input:focus{
