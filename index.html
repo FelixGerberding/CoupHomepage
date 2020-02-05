@@ -53,7 +53,7 @@
 
             <div class="button-wrapper">
                 <div class="outlined-button">
-                    <p>KEEP ME UP TO DATE</p>
+                    <p>OMG, YES!</p>
                 </div>
             </div>
 
@@ -128,7 +128,8 @@
                 no headache.
             </p>
 
-            <input class="email-input" type="text" value="Email">
+            <input class="email-input" type="text" value="Email" onfocus="(this.value == 'Email') && (this.value = '')"
+            onblur="(this.value == '') && (this.value = 'Email')">
 
             <div class="button-wrapper">
                 <div class="outlined-button">
