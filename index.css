@@ -80,6 +80,16 @@ h1{
     font-weight: 700;
 }
 
+#horizontal-mockup{
+    height: 27vh; 
+    margin-top: 8vh;
+}
+
+#spotlight-mockup{
+    display: none;
+    height: 100%;
+}
+
 .button-wrapper{
     margin-top: 5vh;
     text-align: center;
@@ -89,13 +99,13 @@ h1{
 .outlined-button{
     display: inline-block;
     font-family: "Righteous";
-    font-size: 2.5vh;
+    font-size: 1rem;
     color: #FFFFFF;
-    padding: 1.8vh 2.5vh;
+    padding: 0.9rem 1.3rem;
     border-color: #FFFFFF;
-    border-width: 0.8vh;
+    border-width: 4px;
     border-style: solid;
-    border-radius: 1.8vh;
+    border-radius: 0.9rem;
 }
 
 .outlined-button p{
@@ -132,14 +142,9 @@ h1{
 }
 
 .selling-points-wrapper{
-    text-align: center;
-}
-
-
-.selling-points{
-    display: inline-block;
-    width: auto;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .selling-points img{
@@ -154,6 +159,10 @@ h1{
     display: flex;
     align-items: center;
     margin-top: 30px;
+}
+
+#floating-mockup{
+    display: none;
 }
 
 .place-holder-image{
@@ -174,7 +183,8 @@ h1{
 
 .newsletter-cta{
     background-color: #152882;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .newsletter-cta .outlined-button{
@@ -182,6 +192,7 @@ h1{
     color: #38E0EF;
     font-weight: 300;
     margin-bottom: 40px;
+    border-width: 4px;
 }
 
 .newsletter-cta .outlined-button p{
@@ -189,17 +200,27 @@ h1{
     color: #38E0EF;
 }
 
-.newsletter-cta p{
-    font-size: 1.4rem;
-    font-weight: 300;
+.cta p{
     color: #FFFFFF;
-    padding: 30px 40px 0 40px;
+    display: block;
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.cta-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta{
+    height: fit-content;
+    padding: 30px;
 }
 
 .newsletter-cta .call-to-action{
     font-weight: 500;
     font-size: 2rem;
-    padding: 30px 40px 0 40px;
 }
 
 .coup-logo-as-text{
@@ -207,12 +228,22 @@ h1{
     font-weight: 300;
 }
 
+.cta-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta-input-wrapper{
+    padding-right: 30px;
+}
+
 .email-input{
     font-family: "Comfortaa";
     font-weight: 300;
     font-size: 1rem;
     padding: 13px 20px;
-    margin: 90px auto 30px auto;
+    margin: 30px auto 30px auto;
     display: block;
     border: none;
     box-shadow: 0 4px 8px #00000041;
@@ -235,11 +266,23 @@ h1{
 
 
 
-
-
 @media only screen and (min-width: 700px) {
     body{
         font-size: 20px;
+    }
+
+    #horizontal-mockup{
+        display: none;
+    }
+
+    #spotlight-mockup{
+        display: inline-block;
+        height: 40vh;
+    }
+
+    .catch-phrase{
+        width: fit-content;
+        float: right;
     }
 
     .step-card{
@@ -265,6 +308,36 @@ h1{
         width: 60%;
         margin: 0;
         padding: 0;
+        text-align: left;
+    }
+
+    .selling-points{
+        justify-content: start;
+        float: right;
+    }
+
+    .selling-points div{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .selling-points img{
+        width: 50px;
+    }
+
+    .selling-points p{
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .place-holder-image{
+        display: none;
+    }
+
+    .newsletter-cta{
+        margin-top: 80px;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
@@ -295,12 +368,7 @@ h1{
         font-size: 24px;
     }
 
-    #horizontal-mockup{
-        display: none;
-    }
-
     #spotlight-mockup{
-        display: inline-block;
         height: 90vh;
     }
 
@@ -320,7 +388,7 @@ h1{
         margin: 0 10px;
     }
 
-    .button-wrapper{
+    .top-section .button-wrapper{
         text-align: left;
     }
 
@@ -328,6 +396,45 @@ h1{
         height: 13vh;
         padding: 50px 70px 0 70px;
         overflow: auto;
+    }
+
+    .content .outlined-button{
+        margin-left: 20%;
+    }
+
+    .selling-points-wrapper{
+        justify-content: space-evenly;
+    }
+
+    .selling-points{
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+
+    .newsletter-cta{
+        justify-content: start;
+    }
+
+    .cta-input-wrapper{
+        display: flex;
+        justify-content: center;
+        flex-grow: 2;
+    }
+
+    #floating-mockup{
+        display: block;
+        height: 470px;
+        margin-left: 100px;
+    }
+
+    .newsletter-cta{
+        background-color: transparent;
+        margin-bottom: 80px;
+    }
+
+    .cta-wrapper{
+        background-color: #152882;
+        width: 40%;
     }
 }
 
@@ -395,6 +502,22 @@ h1{
 
     h1{
         margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .selling-points{
+        margin-right: 0;
+        margin-bottom: 220px;
+    }
+
+    .selling-points div{
+        margin-top: 60px;
+    }
+
+    #floating-mockup{
+        display: block;
+        height: 700px;
+        margin-left: 0;
     }
     
 }
@@ -411,14 +534,27 @@ h1{
 
 
 
+@media only screen and (max-height: 650px){
+    #horizontal-mockup{
+        display: inline-block;
+        height: 50vh;
+        margin-top: 0;
+    }
 
-
-
-
-
-
-@media only screen and (max-width: 919px) {
     #spotlight-mockup{
         display: none;
+    }
+
+    .catch-phrase{
+        font-size: 2rem;
+        width: fit-content;
+        float: right;
+        
+    }
+
+    .content .button-wrapper{
+        margin: 0;
+        float: right;
+        margin-top: 27%;
     }
 }
